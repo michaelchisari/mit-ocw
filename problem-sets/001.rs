@@ -1,3 +1,7 @@
+// MIT OCW
+// 6.00SC
+// Problem Set #001
+
 use std::f64;
 
 
