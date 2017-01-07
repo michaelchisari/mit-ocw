@@ -1,5 +1,5 @@
 // MIT 6.00SC
-// Problem Set #002
+// Problem Set #001-b
 // Paying Off Credit Card Debt: Paying Debt Off In A Year
 
 use std::f64;

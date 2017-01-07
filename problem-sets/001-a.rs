@@ -1,5 +1,5 @@
 // MIT 6.00SC
-// Problem Set #001
+// Problem Set #001-a
 // Paying Off Credit Card Debt: Paying The Minimum
 
 use std::f64;
