@@ -1,8 +1,10 @@
 // MIT 6.00SC
 // Problem Set #001
-// "Paying Off Credit Card Debt"
+// Paying Off Credit Card Debt: Paying The Minimum
 
 use std::f64;
+use std::io;
+use std::process;
 
 
 // WTF, Rust!  You don't have a built-in function to
@@ -11,17 +13,39 @@ fn currency(n: f64) -> f64 {
     f64::round(n * 100.0) / 100.0
 }
 
+// I guess Rust also overcomplicates user input.
+// Was C this obtuse?  I can't quite remember, but
+// I think it was.
+fn input_number(message: &str) -> f64 {
+    print!("{}", message);
+    io::Write::flush(&mut io::stdout()).expect("flush failed!");
+
+    let mut input_text = String::new();
+    io::stdin()
+        .read_line(&mut input_text)
+        .expect("failed to read from stdin");
+
+    let balance: f64;
+
+    let trimmed = input_text.trim();
+    match trimmed.parse::<f64>() {
+        Ok(i) => balance = i,
+        Err(..) => {
+            println!("Not a valid number: {}", trimmed);
+            process::exit(1);
+        }
+    };
+
+    return balance;
+}
+
 fn main() {
 
-    // Say you’ve made a $5,000 purchase on a credit card
-    // with 18% annual interest rate
-    // and 2% minimum monthly payment rate.
-    // After a year, how much is the remaining balance?
-
-    let balance = 5000.00;
+    let balance = input_number("Enter the minimum monthly payment rate as a decimal: ");
     let mut new_balance = balance;
-    let interest_rate = 0.18;
-    let monthly_payment_rate = 0.02;
+    let interest_rate = input_number("Enter the annual credit card interest rate as a decimal: ");
+    let monthly_payment_rate = input_number("Enter the minimum monthly payment rate as a \
+                                             decimal: ");
 
     let mut total_amount_paid = 0.0;
 
