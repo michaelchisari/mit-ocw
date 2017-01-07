@@ -1,6 +1,6 @@
-// MIT OCW
-// 6.00SC
+// MIT 6.00SC
 // Problem Set #001
+// "Paying Off Credit Card Debt"
 
 use std::f64;
 
