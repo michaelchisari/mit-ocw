@@ -1,3 +1,5 @@
+[Problem Set 001 (pdf)](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/unit-1/lecture-4-machine-interpretation-of-a-program/MIT6_00SCS11_ps1.pdf)
+
 # Notes: 
   * Self-grading is hard, especially when it comes to code. 
   * The differences between Rust and Python are wide.
