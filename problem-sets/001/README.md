@@ -1,11 +1,8 @@
 # Notes: 
-  Self-grading is hard, especially when it comes to code. 
-
-  The differences between Rust and Python are big.
-
-  A lot of Rust tutorials and stackoverflow questions are outdated.
-
-  If anyone finds this and thinks I was too generous, send a pull request with your criticisms.*
+  * Self-grading is hard, especially when it comes to code. 
+  * The differences between Rust and Python are wide.
+  * A lot of Rust tutorials and stackoverflow questions are outdated.
+  * If anyone finds this and thinks I was too generous, send a pull request with your criticisms.
 
 # 001-a
   Returned the proper results, code is clean and efficient, and I worked around some small limitations in Rust.
